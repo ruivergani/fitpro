@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>FitPro - A sua academia</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/smooth_navigation.js"></script>
+	<script src="js/btn-topo.js"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+
+</head>
+
+<body>
+
+<div id="interface" class="container-fluid">
+
+<div id="topo"><img src="images/seta_cima.png"></div>
+
+<header id="banner" class="row">
+	<div id="navigator">
+		<h1 class="text-uppercase col-xs-6 col-md-4">fit<span>pro</span></h1>
+		<nav id="menu" class="col-xs-6 visible-sm visible-xs navbar">
+			<ul class="list-unstyled">
+				<li class="dropdown active">
+					<img src="images/menu-icon.png" class="dropdown-toggle pull-right" data-toggle="dropdown">			
+					<ul class="dropdown-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#academia">A Academia</a></li>
+						<li><a href="#modalidades">Modalidades</a></li>
+						<li><a href="#planos">Planos</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<nav id="navbar" class="hidden-sm hidden-xs col-md-8 navbar">
+			<a href="#">Home</a>
+			<a href="#academia">A Academia</a>
+			<a href="#modalidades">Modalidades</a>
+			<a href="#planos">Planos</a>
+			<a href="#contato">Contato</a>
+			<a href="login.html">Login</a>
+		</nav>
+	</div>
+
+	<div id="banner-info" class="text-center">
+		<div class="bg-video">
+			<video src="video/training.mp4" poster="video/training.jpg" autoplay loop></video>
+		</div>
+
+		<h2 class="text-uppercase wow rotateIn">Fitness, saúde e bem estar</h2>
+		<h3>Treinos Fitness, Dicas de nutrição, Como construir seus músculos</h3>
+	</div>
+</header>
+
+<div>
+	<h1>Formulário de cadastro</h1>
+	<form action="" class="form-horizontal">
+
+		<ul class="nav nav-tabs nav-pills nav-justified">
+			<li class="active"><a href="#usuario" data-toggle="tab">Usuário</a></li>
+			<li><a href="#endereco" data-toggle="tab">Endereço</a></li>
+			<li><a href="#contato" data-toggle="tab">Contato</a></li>
+			<li><a href="#mensagem" data-toggle="tab">Mensagem</a></li>
+			<li><a href="#interesse" data-toggle="tab">Área de Interesses</a></li>
+		</ul>
+
+	<div class="tab-content">
+		<fieldset id="usuario" class="tab-pane active">
+			
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Nome:</label>
+			<div class="col-md-10">
+				<input type="text" name="Tnome" id="cnome" placeholder="digite seu nome" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Sobrenome:</label>
+			<div class="col-md-10">
+				<input type="text" name="Tsobrenome" id="csobrenome" placeholder="digite seu sobrenome" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Sexo:</label>
+			<div class="col-md-10">
+					<div class="radio-inline">
+						<input type="radio" name="Tsexo" id="cmasc" checked>Masculino
+					</div>
+					<div class="radio-inline">
+						<input type="radio" name="Tsexo" id="cfem">Feminino
+					</div>
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Nascimento:</label>
+			<div class="col-md-10">
+				<input type="data" name="Tnasc" id="cnasc" class="form-control">
+			</div>
+			</div>
+		</fieldset>
+
+		<fieldset id="endereco" class="tab-pane">
+			
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Endereço:</label>
+			<div class="col-md-10">
+			<input type="text" name="Trua" id="crua" placeholder="digite seu endereço" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Nº:</label>
+			<div class="col-md-10">
+			<input type="number" name="Tnum" id="cnum" placeholder="digite o número" min="1" max="9999" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Complemento:</label>
+			<div class="col-md-10">
+			<input type="text" name="Tcomp" id="ccomp" placeholder="casa, apto., etc." class="form-control">
+			</div>
+			</div>
+
+			<div class="form-group">
+			<label class="col-md-2 control-label">Cidade:</label>
+			<div class="col-md-10">
+			<input type="text" name="Tcid" id="ccid" placeholder="digite sua cidade" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">CEP:</label>
+			<div class="col-md-10">
+			<input type="number" name="Tcep" id="ccep" placeholder="digite o CEP" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Estado:</label>
+			<div class="col-md-10">
+			<select name="Test" id="cest" class="form-control">
+				<optgroup label="Região Sudeste">
+					<option value="ES">Espírito Santo</option>
+					<option value="MG" selected>Minas Gerais</option>
+					<option value="SP">São Paulo</option>
+					<option value="RJ">Rio de Janeiro</option>
+				</optgroup>
+				<optgroup label="Região Sul">
+					<option value="PR">Paraná</option>
+					<option value="SC">Snata Catarina</option>
+					<option value="RS">Rio Grande do Sul</option>
+				</optgroup>
+			</select>
+		</div>
+		</div>
+
+		</fieldset>
+
+		<fieldset id="contato" class="tab-pane">
+			
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Telefone:</label>
+			<div class="col-md-10">
+			<input type="tel" name="Tfone" id="cfone" placeholder="(xxx) xxxx-xxxx" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Celular:</label>
+			<div class="col-md-10">
+			<input type="tel" name="Tcel" id="ccel" placeholder="(xxx) xxxx-xxxx" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Email:</label>
+			<div class="col-md-10">
+			<input type="email" name="Tmail" id="cmail" placeholder="digite seu email" class="form-control">
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Rede Social:</label>
+			<div class="col-md-10">
+			<input type="text" name="Tsocial" id="csocial" placeholder="facebook, instagran, etc." class="form-control">
+			</div>
+			</div>
+		</fieldset>
+
+		<fieldset id="mensagem" class="tab-pane">
+			
+			
+			<div class="form-group">
+			<label class="col-md-2 control-label">Mensagem:</label>
+			<div class="col-md-10">
+			<textarea name="Tmsg" id="cmsg" rows="5" class="form-control"></textarea>
+			</div>
+		</fieldset>
+
+			<fieldset id="interesse" class="tab-pane">
+				
+				<label class="col-md-2 control-label">Selecione suas áreas de interesse:</label>
+
+				<div class="col-md-10 radio">	
+					<input type="checkbox">Musculação<br>
+					<input type="checkbox">Aeróbica<br>
+					<input type="checkbox">Muai Thai<br>
+					<input type="checkbox" checked>Zumba<br>
+					<input type="checkbox">ABS<br>
+					<input type="checkbox">CrossFit<br>
+					<input type="checkbox">Bodypump<br>
+					<input type="checkbox">Cross Power<br>
+					<input type="checkbox">Kickboxing
+				</div>
+			</fieldset>
+	</div>
+			<div class="text-center">
+			<div class="btn-group btn-group-lg">
+				<input type="submit" value="enviar" class="btn btn-success">
+			</div>
+			<div class="btn-group btn-group-lg">
+				<input type="reset" value="limpar" class="btn btn-danger">
+			</div>
+		</div>
+
+	</form>
+
+<footer id="rodape" class="row">
+
+	<div id="endereco">
+		<h5>Contato</h5>
+		<p>Rua Street, 123<br>
+		129907 - Glasglow<br>
+		023 456 23456<br>
+		contato@fitpro.com</p>
+	</div>
+
+	<div id="copyright">
+		<h6>FitPro - Copyright &copy; - 2016 <span>Desenvolvido por Studio-H</span></h6>
+</div>
+
+
+</footer>
+
+</div>
+</body>
+</html>

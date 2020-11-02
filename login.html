@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FitPro - A sua academia</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/smooth_navigation.js"></script>
+	<script src="js/btn-topo.js"></script>
+
+	<script>
+		new WOW().init();
+
+		$(function(){
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+
+		$(function(){
+			$('[data-toggle="popover"]').popover({
+					placement:'top',
+					trigger:'hover'
+				})
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+
+<div id="interface" class="container-fluid">
+
+<div id="topo"><img src="images/seta_cima.png"></div>
+
+<header id="banner" class="row">
+	<div id="navigator">
+		<h1 class="text-uppercase col-xs-6 col-md-4">fit<span>pro</span></h1>
+		<nav id="menu" class="col-xs-6 visible-sm visible-xs navbar">
+			<ul class="list-unstyled">
+				<li class="dropdown active">
+					<img src="images/menu-icon.png" class="dropdown-toggle pull-right" data-toggle="dropdown">			
+					<ul class="dropdown-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#academia">A Academia</a></li>
+						<li><a href="#modalidades">Modalidades</a></li>
+						<li><a href="#planos">Planos</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<nav id="navbar" class="hidden-sm hidden-xs col-md-8 navbar">
+			<a href="#">Home</a>
+			<a href="#academia">A Academia</a>
+			<a href="#modalidades">Modalidades</a>
+			<a href="#planos">Planos</a>
+			<a href="#contato">Contato</a>
+			<a href="login.html">Login</a>
+		</nav>
+	</div>
+
+	<div id="banner-info" class="text-center">
+		<div class="bg-video">
+			<video src="video/training.mp4" poster="video/training.jpg" autoplay loop></video>
+		</div>
+
+		<h2 class="text-uppercase wow rotateIn">Fitness, saúde e bem estar</h2>
+		<h3>Treinos Fitness, Dicas de nutrição, Como construir seus músculos</h3>
+	</div>
+</header>
+
+<div id="login_form">
+	<form data-toggle="validator">
+		<div class="form-group">
+			<label>Usuário</label>
+			<input type="text" placeholder="nome de usuário" class="form-control" required data-toggle="tooltip" data-placement="right" data-html="true" title="Insira o seu <strong style='color:red;'> nome de usuário</strong>">
+			<span class="glyphicon glyphicon-question-sign" data-toggle="popover" title="Alerta!" data-content="digite um usuário registrado"></span>
+		</div>
+		<div class="form-group">
+			<label>Email:</label>
+			<input type="email" id="inputemail" placeholder="endereço de email" class="form-control" required data-error="Por favor, digite um email válido!">
+			<div class="help-block with-errors"></div>
+	    </div>
+
+	    <div class="form-group">
+	    	<label>Senha:</label>
+			<input type="password"  placeholder="senha" class="form-control" required data-lenght="6">
+			<span class="help-block">Mínimo de 6 caracteres!</span>
+		</div>
+
+		<div class="form-control">
+			<label>Email:</label>
+			<input type="email" id="inputconfirm"   placeholder="digite seu email" class="form-control" required data-match="#inputemail" data-match-error="Os emails não são iguais!">
+			<div class="help-block with-errors"></div>
+		</div>
+
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group btn-group-lg">
+				<input type="submit" value="enviar" class="btn btn-success">
+			</div>
+
+			<div class="btn-group btn-group-lg">
+				<input type="reset" value="limpar" class="btn btn-danger">
+			</div>
+
+		</div>
+
+	</form>
+</div>
+
+<footer id="rodape" class="row">
+
+	<div id="endereco">
+		<h5>Contato</h5>
+		<p>Rua Street, 123<br>
+		129907 - Glasglow<br>
+		023 456 23456<br>
+		contato@fitpro.com</p>
+	</div>
+
+	<div id="copyright">
+		<h6>FitPro - Copyright &copy; - 2016 <span>Desenvolvido por Studio-H</span></h6>
+</div>
+
+
+</footer>
+
+</div>
+
+<div class="modal fade" id="mymodal">
+	<div class="modal dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

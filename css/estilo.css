@@ -1,0 +1,219 @@
+div#navigator{
+	background-color: rgba(0,0,0,0.8);
+	height: 96px;
+	padding: 10px;
+}
+
+header#banner h1{
+	color: #fff;
+	font-weight: 900;
+}
+
+header#banner h1 span{
+	color: #060;
+}
+
+nav#menu{
+	padding-top: 14px;
+}
+
+ul.dropdown-menu{
+	margin-top: 18px;
+}
+
+.dropdown-menu{
+	background-color:rgba(0,0,0,0.8);
+}
+
+nav#menu a{
+	font-size:18px;
+	color:#fff;
+	padding: 20px;
+	z-index: 9999;
+}
+
+nav#menu a:hover{
+	background-color:rgba(10,10,10,0.7);
+}
+
+div#banner-info{
+	/*background-image:url(images/training.jpg);*/
+	height: 550px;
+	position: relative;
+}
+
+.bg-video{
+ position: absolute; 
+ top: 0; 
+ left: 0;
+ width: 100%; 
+ height: 100%;
+ overflow: hidden;  /* esconde */
+ z-index: -1; /* para esconder em baixo */
+}
+
+div#banner-info h2{
+	color:#fff;
+	font-size:40px;
+	padding-top: 100px;
+	margin-top: 0;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.4);
+}
+
+div#banner-info h3{
+	color:#fff;
+	font-size:30px;
+	padding-top:30px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.4);
+}
+
+figure{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+figcaption{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+figcaption h2{
+	color:#fff;
+	font-size:25px;
+	background-color:rgba(0,0,0,0.5);
+	padding: 2%;
+	margin:0;
+}
+
+section#academia{
+	background: linear-gradient(#999, #eee); 
+}
+
+section#modalidades h2{
+	font-weight: 900;
+	color: #060;
+	font-size: 35px;
+}
+
+section#planos{
+	background-color: #221d1e;
+}
+
+article#ouro, article#prata, article#bronze{
+	background-color:#151515;
+	border:1px solid #444;
+	margin-bottom: 10px;
+}
+
+article#ouro h4, article#prata h4, article#bronze h4{
+	color:#fff;
+	font-size:20px;
+	padding:10px 15px;
+}
+
+article#ouro h4 {
+	background-color:#F90;
+}
+
+article#prata h4{
+	background-color:#666;
+}
+
+article#bronze h4{
+	background-color:#845d3e;
+}
+
+article#ouro h4 span, article#prata h4 span, article#bronze h4 span{
+	font-size: 25px;
+	padding: 15px;
+	background-color: #000;
+	padding: 8px;
+	margin-top: -10px;
+}
+
+article#ouro ul, article#prata ul, article#bronze ul{
+	min-height: 125px;
+}
+
+article#ouro li, article#prata li, article#bronze li{
+	list-style-image:url(../images/arrow.png); /* mudar icone da rede */
+	list-style-position:inside;
+	background-color:#444;
+	color:#fff;
+	text-transform:uppercase;
+	padding-left: 5px;
+	margin-bottom:3px;
+}
+
+footer#rodape{
+	background-color:#333;
+	color:#fff;
+}
+
+address{
+	padding: 10px;
+}
+
+div#copyright{
+	background-color: #000;
+	height: 30px;
+}
+
+div#copyright h6{
+	background-color:#000;
+	padding-top:10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10px;
+}
+
+div#topo { 
+	cursor: pointer; 
+	display: none; 
+	position: fixed; 
+	right:-5em;
+	bottom:0;
+	padding: 10px;
+	background-color: #fff;
+	z-index: 9999;
+}
+
+div#topo img{
+	width:30%;
+}
+
+div#login_form{
+	width: 50%;
+	margin: 50px auto;
+}
+
+@media screen and (min-width: 768px){
+	nav#navbar a{
+	font-size:14px;
+	color:#fff;
+	padding: 8px;
+	}
+
+	nav#navbar{
+		margin-top: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	section#modalidades img{
+		padding-bottom: 10px;
+	}
+
+	article#ouro ul, article#prata ul, article#bronze ul{
+		min-height: 165px;
+	}
+
+	div#copyright h6{
+		font-size: 20px;
+	}
+
+	nav#navbar a{
+		font-size:20px;
+	}
+
